@@ -23,3 +23,7 @@ Rocio C Martinez, Kyle Knight, Alex Chao, and Jon Stillson
 ## Screenshot of Domain Model
 
 [Domain Model](img/domain-model.png)
+
+## Project Board
+
+[User Stories](https://github.com/orgs/Secret-Laboratory-Org/projects/1/views/1)

@@ -1,5 +1,16 @@
 # Software Requirements
 
+## Vision
+
+What is the vision of this product?
+What pain point does this project solve?
+Why should we care about your product?
+
+Vision of this product is help people find their hobbies.
+Pain points it solves by occupying free time, help them get out of your comfort zone.
+Provides some sort of fulfillment for everyday life.
+You should care because hobbies promote mental health.
+
 ## `INS:`
 
 - Presenting the Form at the home page
