@@ -18,6 +18,8 @@ Rocio C Martinez, Kyle Knight, Alex Chao, and Jon Stillson
 
 ## Screenshot of Wire-frame
 
+[Wireframe](img/wireframe.png)
 
 ## Screenshot of Domain Model
 
+[Domain Model](img/domain-model.png)
