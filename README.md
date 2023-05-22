@@ -15,4 +15,9 @@ Rocio C Martinez, Kyle Knight, Alex Chao, and Jon Stillson
 * Takes in user input from our list of questions - bubble form
 * Give all hobbies that fits their requirements and the full list of hobbies that we have on the second page.
 * list of hobbies to choose from
-  
+
+## Screenshot of Wire-frame
+
+
+## Screenshot of Domain Model
+
