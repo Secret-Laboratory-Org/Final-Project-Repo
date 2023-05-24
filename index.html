@@ -11,10 +11,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* Add styles for the hobby generator */
+  body {
+    background-image: url('img/wall-gfddb1e9f2_1920.jpg');
+    background-repeat: repeat; 
+  }
+  #hobbyForm {
+      background-color: #f2f2f2;
+      padding: 20px;
+      width: 300px;
+      float: left;
+    }
+  </style>
 </head>
 
 <body>
-  <body>
     <header>
       <div class="navContainer">
         <nav class="navbar" title="navigationBar" id="aboutUsNavbar">
@@ -25,7 +38,9 @@
             <li><a href="about.html">About</a></li>
           </ul>
         </nav>
-        
+      </div>
+      </header>
+  <main>   
   <h1>Hobby Generator</h1>
 
   <form id="hobbyForm">
@@ -101,7 +116,7 @@
     <br>
     <label>
       Short-term or Long-term:
-      <br>
+      <br>ca
       <input type="radio" name="shortLongTerm" value="short-term"> Short-term
       <input type="radio" name="shortLongTerm" value="long-term"> Long-term
     </label>
@@ -115,6 +130,7 @@
   </div>
 
   <script src="js/app.js"></script>
+</main>
 </body>
 
 </html>
