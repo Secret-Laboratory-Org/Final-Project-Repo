@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <h1>Hobby Generator</h1>
+
+  <form id="hobbyForm">
+    <h2>Preferences</h2>
+    <p>Instructions: Given the parameters below, please select your personal preferences.
+      <br> Once complete, press the 'Find Hobbies' button to view your results!
+    </p>
+
+
+    <label>
+      Indoor or Outdoor:
+      <br>
+      <input type="radio" name="indoorOutdoor" value="indoor"> Indoor
+      <input type="radio" name="indoorOutdoor" value="outdoor"> Outdoor
+    </label>
+    <br>
+    <br>
+    <label>
+      Materials or tools required:
+      <br>
+      <input type="radio" name="toolsMaterials" value="required"> Required
+      <input type="radio" name="toolsMaterials" value="not-required"> Not Required
+    </label>
+    <br>
+    <br>
+    <label>
+      Active Or Non-Active:
+      <br>
+      <input type="radio" name="activeNonActive" value="active"> Active
+      <input type="radio" name="activeNonActive" value="non-active"> Non-Active
+    </label>
+    <br>
+    <br>
+    <label>
+      Structured or Creative:
+      <br>
+      <input type="radio" name="structuredCreative" value="structured"> Structured
+      <input type="radio" name="structuredCreative" value="creative"> Creative
+    </label>
+    <br>
+    <br>
+    <label>
+      Expenses:
+      <br>
+      <input type="radio" name="expense" value="low-expense"> Low-expense
+      <input type="radio" name="expense" value="high-expense"> High-expense
+    </label>
+    <br>
+    <br>
+    <label>
+      Alone or in a Group:
+      <br>
+      <input type="radio" name="aloneGroup" value="alone"> Alone
+      <input type="radio" name="aloneGroup" value="group"> Group
+    </label>
+    <br>
+    <br>
+    <label>
+      Electronic Usage:
+      <br>
+      <input type="radio" name="electronicUsage" value="low-usage"> Low-usage
+      <input type="radio" name="electronicUsage" value="high-usage"> High-usage
+    </label>
+    <br>
+    <br>
+    <label>
+      Planned or Spontaneous:
+      <br>
+      <input type="radio" name="plannedSpontaneous" value="planned"> Planned
+      <input type="radio" name="plannedSpontaneous" value="spontaneous"> Spontaneous
+    </label>
+    <br>
+    <br>
+    <label>
+      Short-term or Long-term:
+      <br>
+      <input type="radio" name="shortLongTerm" value="short-term"> Short-term
+      <input type="radio" name="shortLongTerm" value="long-term"> Long-term
+    </label>
+    <br>
+    <br>
+    <button type="submit" value="Find Hobbies">Find Hobbies</button>
+  </form>
+
+  <div id="results">
+
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
+
 </html>
