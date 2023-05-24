@@ -1,6 +1,5 @@
 /** The following segment added 24MAY 0300 EST by Jon to style the Nav Bar **/
 body {
-  margin: 0;
   background: #222;
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
@@ -20,13 +19,13 @@ header::after {
 
 .navContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: baseline;
 }
 
 #brandText {
   display: flex;
-  font-family: chernobyl;
+  font-family: 'Chernobyl';
   color: #000000;
   font-size: 40px;
 }
@@ -39,7 +38,7 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 20px;
-  font-family: sov;
+  font-family: 'Work Sans';
   /*** This is important for the dynamic hover over list items ***/
   position: relative;
   font-weight: 500;
@@ -70,16 +69,54 @@ nav a:hover::before {
   width: 100%;
 }
 
+#hobbyForm {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 300px;
+  float: left;
+}
+
+
+
 @font-face {
   font-family: 'Chernobyl';
   src: url(/fonts/chernobyl.otf) format("opentype");
-  /*
+}
+
+@font-face {
+  font-family: 'Khokhloma';
   src: url(/fonts/khokhloma.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'KhokhlomaHollow';
   src: url(/fonts/khokhlomahollow.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-Bold';
   src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-BoldItalic';
   src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-Italic';
   src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram';
   src: url(/fonts/sovietprogram.ttf) format("truetype");
-*/
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
