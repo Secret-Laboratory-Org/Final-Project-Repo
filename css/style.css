@@ -1,0 +1,85 @@
+/** The following segment added 24MAY 0300 EST by Jon to style the Nav Bar **/
+body {
+  margin: 0;
+  background: #222;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: #7d69da;
+}
+
+header {
+  background: #741616;
+}
+
+header::after {
+  content: '';
+  /** This is important to the overhead indicator .hover animation  **/
+  display: table;         
+  clear: both;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#brandText {
+  display: flex;
+  font-family: chernobyl;
+  color: #000000;
+  font-size: 40px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 20px;
+  font-family: sov;
+  /*** This is important for the dynamic hover over list items ***/
+  position: relative;
+  font-weight: 500;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/** This means it is in the link BEFORE the text **/
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000000;
+  /** this position is why we need the nav li position to be relative **/
+  position: absolute;
+  top: 0;
+  width: 0%;
+  /** this is what animates the width of the .hover animation over 250 milli-seconds **/
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'Chernobyl';
+  src: url(/fonts/chernobyl.otf) format("opentype");
+  /*
+  src: url(/fonts/khokhloma.ttf) format("truetype");
+  src: url(/fonts/khokhlomahollow.ttf) format("truetype");
+  src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
+  src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
+  src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
+  src: url(/fonts/sovietprogram.ttf) format("truetype");
+*/
+}
+
