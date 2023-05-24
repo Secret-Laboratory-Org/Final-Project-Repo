@@ -1,14 +1,67 @@
 /** The following segment added 24MAY 0300 EST by Jon to style the Nav Bar **/
-body {
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  color: #7d69da;
+
+
+
+
+.back {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Add other background properties as desired */
+  height: calc(100vh - 80px); /* Subtract the height of the header from the viewport height */
+  position: relative;
+  z-index: -1;
 }
+
+header {
+  height: 80px; /* Adjust the height of the header */
+  background-color: #741616;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+main {
+  padding-top: 77px;
+  border: solid 5px green;
+}
+
+.hobbyForm {
+  background-color: #104ade;
+  padding: 20px;
+  max-width: 300px;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+
+body{
+  background-image: url("../background.jpg");
+  color: #741616;
+  
+}
+
+
+.container {
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: solid 3px red;
+
+}
+
 
 header {
   background: #741616;
 }
+
+
+  
+  /* Additional background properties for styling */
+
 
 header::after {
   content: '';
@@ -67,13 +120,6 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
-}
-
-#hobbyForm {
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 300px;
-  float: left;
 }
 
 

@@ -12,19 +12,8 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
 
-  <style>
-    /* Add styles for the hobby generator */
-  body {
-    background-image: url('img/wall-gfddb1e9f2_1920.jpg');
-    background-repeat: repeat; 
-  }
-  #hobbyForm {
-      background-color: #f2f2f2;
-      padding: 20px;
-      width: 300px;
-      float: left;
-    }
-  </style>
+
+
 </head>
 
 <body>
@@ -42,9 +31,12 @@
     </div>
   </header>
   <main>
-  <h1>Hobby Generator</h1>
+    
+     
+        <h1>Hobby Generator</h1>
+     
 
-  <form id="hobbyForm">
+  <form class="hobbyForm">
     <h2>Preferences</h2>
     <p>Instructions: Given the parameters below, please select your personal preferences.
       <br> Once complete, press the 'Find Hobbies' button to view your results!
@@ -117,7 +109,7 @@
     <br>
     <label>
       Short-term or Long-term:
-      <br>ca
+      <br>
       <input type="radio" name="shortLongTerm" value="short-term"> Short-term
       <input type="radio" name="shortLongTerm" value="long-term"> Long-term
     </label>
@@ -126,12 +118,14 @@
     <button type="submit" value="Find Hobbies">Find Hobbies</button>
   </form>
 
-  <div id="results">
+  <!-- <div id="results">
+</div>
+ -->
 
-  </div>
-
-  <script src="js/app.js"></script>
+ 
+  
 </main>
+<script src="js/app.js"></script>
 </body>
 
 </html>
