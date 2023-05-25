@@ -1,7 +1,7 @@
 'use strict';
 
 let resultArea = document.getElementById('results');
-let hobbyForm = document.getElementById('hobbyForm');
+
 
 
 function AppState() {
