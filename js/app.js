@@ -89,7 +89,7 @@ function handleSubmit(event) {
   let structuredCreative = event.target.structuredCreative.value;
   let expense = event.target.expense.value;
   let aloneGroup = event.target.aloneGroup.value;
-  let electronicsUsage = event.target.electronicUsage.value;
+  let electronicsUsage = event.target.electronicsUsage.value;
   let plannedSpontaneous = event.target.plannedSpontaneous.value;
   let shortLongTerm = event.target.shortLongTerm.value;
 
@@ -101,12 +101,7 @@ function handleSubmit(event) {
 
   myForm.reset();
 
-  myForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    // Move to the results page
-    window.location.href = 'results.html';
-  });
-
+  window.location.href = 'results.html';
 
 }
 
@@ -144,7 +139,7 @@ function hobbyComparision(userHobby) {
   }
 }
 
+let stringifiedHobbyArray = JSON.stringify(hobbyArray);
 
-
-
-console.log("Matching hobby names with 6 or more matching keys:", hobbyMatches);
+// Save the stringified hobbyArray to localStorage
+localStorage.setItem('hobbyArray', stringifiedHobbyArray);
