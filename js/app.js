@@ -138,3 +138,8 @@ function hobbyComparision(userHobby) {
 
   }
 }
+
+let stringifiedHobbyArray = JSON.stringify(hobbyArray);
+
+// Save the stringified hobbyArray to localStorage
+localStorage.setItem('hobbyArray', stringifiedHobbyArray);
