@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <title>Hobboratory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Roboto:wght@100&display=swap');
+  </style>
+
+
+
+</head>
+
+<body>
+  <header>
+    <div class="navContainer">
+      <p id="brandText">Secret Laboratory Organization</p>
+      <nav class="navbar" title="navigationBar" id="aboutUsNavbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="results.html">Results</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+<div class="logoGen">
+    <h1>Hobby Generator</h1>
+  </div>
+
+<div class="preferences">
+    <h2>Preferences</h2>
+ </div>
+
+ <div class="directions">
+  <p>Instructions: Given the parameters below, please select your personal preferences.
+    <br> Once complete, press the 'Find Hobbies' button to view your results!
+  </p>
+ </div>
+  
+  
+    
+    <div class="main-container">
+      <div class="falling-images-wrapper">
+        <img class="falling-image" src="img/structured-two.jpg" alt="Image 2">
+        <img class="falling-image" src="img/structured.jpg" alt="Image 3">
+        <img class="falling-image" src="img/creative.jpg" alt="Image 4">
+        <img class="falling-image" src="img/high-usage.jpg" alt="Image 5">
+        <img class="falling-image" src="img/low-usage-two.jpg" alt="Image 1">
+        <img class="falling-image" src="img/indoor.jpg" alt="Image 1">
+      </div>
+    <form id="hobbyForm">
+    <label>
+      Indoor or Outdoor:
+      <br>
+      <input required type="radio" name="indoorOutdoor" value="indoor"> Indoor
+      <input required type="radio" name="indoorOutdoor" value="outdoor"> Outdoor
+    </label>
+    <br>
+    <br>
+    <label>
+      Materials or tools required:
+      <br>
+      <input required type="radio" name="toolsMaterials" value="required"> Required
+      <input required type="radio" name="toolsMaterials" value="not-required"> Not Required
+    </label>
+    <br>
+    <br>
+    <label>
+      Active Or Non-Active:
+      <br>
+      <input required type="radio" name="activeNonActive" value="active"> Active
+      <input required type="radio" name="activeNonActive" value="non-active"> Non-Active
+    </label>
+    <br>
+    <br>
+    <label>
+      Structured or Creative:
+      <br>
+      <input required type="radio" name="structuredCreative" value="structured"> Structured
+      <input required type="radio" name="structuredCreative" value="creative"> Creative
+    </label>
+    <br>
+    <br>
+    <label>
+      Expenses:
+      <br>
+      <input required type="radio" name="expense" value="low-expense"> Low-expense
+      <input required type="radio" name="expense" value="high-expense"> High-expense
+    </label>
+    <br>
+    <br>
+    <label>
+      Alone or in a Group:
+      <br>
+      <input required type="radio" name="aloneGroup" value="alone"> Alone
+      <input required type="radio" name="aloneGroup" value="group"> Group
+    </label>
+    <br>
+    <br>
+    <label>
+      Electronic Usage:
+      <br>
+      <input required type="radio" name="electronicsUsage" value="low-usage"> Low-usage
+      <input required type="radio" name="electronicsUsage" value="high-usage"> High-usage
+    </label>
+    <br>
+    <br>
+    <label>
+      Planned or Spontaneous:
+      <br>
+      <input required type="radio" name="plannedSpontaneous" value="planned"> Planned
+      <input required type="radio" name="plannedSpontaneous" value="spontaneous"> Spontaneous
+    </label>
+    <br>
+    <br>
+    <label>
+      Short-term or Long-term:
+      <br>
+      <input required type="radio" name="shortLongTerm" value="short-term"> Short-term
+      <input required type="radio" name="shortLongTerm" value="long-term"> Long-term
+    </label>
+    <br>
+    <br>
+    <button type="submit" value="Find Hobbies">Find Hobbies</button>
+  </form>
+  <div class="falling-images-wrapper">
+    <img class="falling-image" src="img/spontaneous.jpg" alt="Image 6">
+    <img class="falling-image" src="img/alone-two.jpg" alt="Image 7">
+    <img class="falling-image" src="img/alone.jpg" alt="Image 8">
+    <img class="falling-image" src="img/group.jpg" alt="Image 9">
+    <img class="falling-image" src="img/outdoor.jpg" alt="Image 10">
+    <img class="falling-image" src="img/group-two.jpg" alt="Image 9">
+    <img class="falling-image" src="img/outdoor-two.jpg" alt="Image 10">
+  </div>
+</div>
+<div id="results"></div>
+</main>
+  <script src="js/app.js"></script>
+  <!-- <script src="js/apptwo.js"></script> -->
+</body>
+
+</html>
