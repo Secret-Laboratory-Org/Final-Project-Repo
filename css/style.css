@@ -17,7 +17,7 @@
 header {
   height: 80px; /* Adjust the height of the header */
   background-color: #741616;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -52,8 +52,6 @@ body{
 
   margin-left: auto;
   margin-right: auto;
-  he
-
   border: solid 3px red;
 
 }
@@ -90,6 +88,7 @@ header::after {
 
 nav ul {
   list-style: none;
+  
 }
 
 nav li {
@@ -107,6 +106,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 25px;
+
 }
 
 /** This means it is in the link BEFORE the text **/
@@ -116,7 +116,7 @@ nav a::before {
   height: 5px;
   background-color: #000000;
   /** this position is why we need the nav li position to be relative **/
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 0%;
   /** this is what animates the width of the .hover animation over 250 milli-seconds **/
@@ -191,24 +191,52 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-
-
-
 }
 .logoGen h1 {
   font-size: 1.75rem;
   font-family: 'Bungee Shade', cursive;
   color: #000000;
-  
- 
-
-
-  
-  
+  background-color: #f2f2f2;
+  z-index: 1;
+    padding: 5px;
 }
 
+.preferences {
+height: 40px;
+border: solid 2px orange;
+display: flex;
+justify-content: center;
+align-items: center;
 
+}
 
+.preferences h2 {
+  font-size: 1rem;
+  font-family: 'Bungee Shade', cursive;
+  color: blue;
+  background-color: #f2f2f2;
+    padding: 5px;
+    z-index: 1;
+   
+}
+
+.directions {
+  height: 40px;
+  border: solid 2px palegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  }
+
+  .directions p {
+    font-size: 1rem;
+    color: blue;
+    background-color: #f2f2f2;
+      padding: 5px;
+      z-index: 1;
+     
+  }
 
 
 .falling-images-wrapper {
