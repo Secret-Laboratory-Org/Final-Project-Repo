@@ -1,15 +1,72 @@
 /** The following segment added 24MAY 0300 EST by Jon to style the Nav Bar **/
-body {
-  margin: 0;
-  background: #222;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  color: #7d69da;
+
+
+
+
+.back {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* Add other background properties as desired */
+  height: calc(100vh - 80px); /* Subtract the height of the header from the viewport height */
+  position: relative;
+  z-index: -1;
 }
+
+header {
+  height: 80px; /* Adjust the height of the header */
+  background-color: #741616;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+main {
+  padding-top: 77px;
+  border: solid 5px green;
+}
+
+.hobbyForm {
+  background-color: #104ade;
+  padding: 20px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+}
+
+body{
+  background-image: url("../background.jpg");
+  color: #741616;
+  
+  
+  
+}
+
+
+.container {
+
+  margin-left: auto;
+  margin-right: auto;
+  he
+
+  border: solid 3px red;
+
+}
+
 
 header {
   background: #741616;
 }
+
+
+  
+  /* Additional background properties for styling */
+
 
 header::after {
   content: '';
@@ -20,13 +77,13 @@ header::after {
 
 .navContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: baseline;
 }
 
 #brandText {
   display: flex;
-  font-family: chernobyl;
+  font-family: 'Chernobyl';
   color: #000000;
   font-size: 40px;
 }
@@ -39,7 +96,7 @@ nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 20px;
-  font-family: sov;
+  font-family: 'Work Sans';
   /*** This is important for the dynamic hover over list items ***/
   position: relative;
   font-weight: 500;
@@ -71,15 +128,118 @@ nav a:hover::before {
 }
 
 @font-face {
+font-family: 'CoolFont';
+src: url('path-to-font-file.woff2') format('woff2'),
+     url('path-to-font-file.woff') format('woff');
+
+}
+
+@font-face {
   font-family: 'Chernobyl';
   src: url(/fonts/chernobyl.otf) format("opentype");
-  /*
-  src: url(/fonts/khokhloma.ttf) format("truetype");
-  src: url(/fonts/khokhlomahollow.ttf) format("truetype");
-  src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
-  src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
-  src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
-  src: url(/fonts/sovietprogram.ttf) format("truetype");
-*/
 }
+
+@font-face {
+  font-family: 'Khokhloma';
+  src: url(/fonts/khokhloma.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'KhokhlomaHollow';
+  src: url(/fonts/khokhlomahollow.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-Bold';
+  src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-BoldItalic';
+  src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram-Italic';
+  src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'SovietProgram';
+  src: url(/fonts/sovietprogram.ttf) format("truetype");
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.main-container {
+display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+border: solid 2px red;
+
+}
+.logoGen {
+height: 40px;
+border: solid 2px purple;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+.logoGen h1 {
+  font-size: 1.75rem;
+  font-family: 'Bungee Shade', cursive;
+  color: #000000;
+  
+ 
+
+
+  
+  
+}
+
+
+
+
+
+.falling-images-wrapper {
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: flowImages 20s linear infinite;
+  overflow: hidden;
+  border: solid 2px pink;
+  width: 50%;
+  max-height: 250vh;
+  
+
+}
+
+.falling-image {
+  
+  width: 300px; 
+  height: 300px; 
+  animation: fall 15s linear infinite;
+  margin-bottom: 50px;
+  
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+ 100% {
+    transform: translateY(100%);
+  }
 
