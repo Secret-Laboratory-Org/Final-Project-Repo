@@ -100,6 +100,14 @@ function handleSubmit(event) {
   userInputArray.push(userHobby);
 
   myForm.reset();
+
+  myForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    // Move to the results page
+    window.location.href = 'results.html';
+  });
+
+
 }
 
 myForm.addEventListener('submit', handleSubmit);
@@ -135,5 +143,8 @@ function hobbyComparision(userHobby) {
 
   }
 }
+
+
+
 
 console.log("Matching hobby names with 6 or more matching keys:", hobbyMatches);
