@@ -27,3 +27,6 @@ Rocio C Martinez, Kyle Knight, Alex Chao, and Jon Stillson
 ## Project Board
 
 [User Stories](https://github.com/orgs/Secret-Laboratory-Org/projects/1/views/1)
+
+## Slide Show 
+[Google Slides](https://docs.google.com/presentation/d/1xRfrmWSzNdfbJhLjsgiHoeYWMN3gvLsnPBxlaQVN2bA/edit?usp=sharing)
