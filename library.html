@@ -18,9 +18,10 @@
 <body>
   <header>
     <div class="navContainer">
-      <p id="brandText">Secret Laboratory Organization</p>
+      <p id="brandText">Secret Laboratory</p>
       <nav class="navbar" title="navigationBar" id="aboutUsNavbar">
         <ul class="nav-links">
+          
           <li><a href="index.html">Home</a></li>
           <li><a href="results.html">Results</a></li>
           <li><a href="library.html">Library</a></li>
@@ -30,33 +31,171 @@
     </div>
   </header>
   <main>
+
+
     <div class="logoGen">
-      <h1>Library of Hobbies Available</h1>
+      <h1>Library of Hobbies Recommendations</h1>
     </div>
     <br>
-    <ul id="hobbyList" class="resultsBox"></ul>
 
-  <script>
-    // Retrieve the hobbyArray from localStorage
-    let storedHobbyArray = localStorage.getItem('hobbyArray');
-    let hobbyArray = JSON.parse(storedHobbyArray);
+<sectiion class="libraryLists">
+  <div class="column">
+    <ul id="hobbyList" class="resultsPageBox">
+      <h2>Tufting</h2>
+      <li>Tufting is a creative and hands-on craft that allows you to create beautiful textured designs on various items like rugs 
+        and pillows, offering a relaxing and rewarding outlet for artistic expression.</li>
+      <h2>Beatboxing</h2>
+        <li>Beatboxing is a unique and rhythmic form of vocal percussion that lets you explore your musicality and creativity, 
+        providing a fun and engaging hobby that can be practiced anywhere.</li>
+      <h2>Tai Chi</h2>
+        <li>Tai Chi combines gentle flowing movements and deep breathing, promoting relaxation, balance, and overall well-being. 
+        It's a fantastic hobby for reducing stress, improving physical coordination, and cultivating inner peace.</li>
+      <h2>Sandbox Art</h2>
+        <li>Sandbox art involves creating intricate designs and patterns using sand in a tray or container. 
+        It's a meditative and visually appealing hobby that allows for artistic exploration while providing a calming and mindful experience.</li>
+      <h2>Metal Detecting</h2>
+        <li>Metal detecting is an exciting and adventurous hobby that involves searching for buried treasures, 
+        relics, or valuable items. It combines the thrill of discovery with spending time outdoors, making it a great hobby for exploration 
+        and history enthusiasts.</li>
+      <h2>Muay Thai: </h2>
+        <li>Muay Thai, also known as Thai boxing, is a combat sport that combines martial arts techniques with physical conditioning. 
+        Engaging in Muay Thai not only improves fitness levels but also fosters self-discipline, self-defense skills, and mental resilience.</li>
+      <h2>Flying Drones</h2>
+        <li>Flying drones provides a unique perspective and opens up a world of aerial photography and videography 
+        possibilities. It's an exhilarating and creative hobby that offers a blend of technology, exploration, and capturing stunning imagery.</li>
+      <h2>Spoken Poetry</h2>
+        <li>Spoken poetry allows you to express emotions, thoughts, and stories through the power of spoken word. 
+        It's a captivating and cathartic hobby that nurtures creativity, encourages self-reflection, and can be shared in poetry slams or open 
+        mic nights.</li>
+      <h2>Lego Building</h2>
+        <li>Lego building is a timeless hobby that appeals to people of all ages. It stimulates problem-solving skills, 
+        encourages imagination, and offers a sense of accomplishment as you construct intricate models or create your own designs with these 
+        versatile building blocks.</li>
+      <h2>Leaf Pressing</h2>
+        <li>Leaf pressing involves preserving and showcasing the beauty of leaves by drying and pressing them between sheets of paper. 
+        It's a peaceful and nature-inspired hobby that allows you to create unique and decorative artwork while connecting with the natural world.</li>
+      </ul>
+    </div>
 
-    // Get the reference to the <ul> element
-    let hobbyList = document.getElementById('hobbyList');
+    <div class="column">
+      <ul id="hobbyList" class="resultsPageBox">
+      <h2>Pickling</h2>
+        <li>Pickling is a culinary hobby that involves preserving fruits, vegetables, or even eggs in a vinegar or brine solution. It offers 
+        a creative outlet in the kitchen, allowing you to experiment with flavors, create unique condiments, and enjoy the satisfaction of homemade 
+        pickled delights.</li>
+      <h2>Juggling</h2>
+        <li>Juggling is a fun and challenging hobby that improves hand-eye coordination, focus, and concentration. Whether you juggle balls, 
+        clubs, or even fire, it's an entertaining skill to master and can be performed solo or as part of a mesmerizing act.</li>
+      <h2>Dungeons & Dragons</h2>
+        <li>Dungeons & Dragons is a tabletop role-playing game that offers limitless possibilities for storytelling, 
+        problem-solving, and collaborative gameplay. It's a social and imaginative hobby that encourages creativity, teamwork, and strategic thinking.</li>
+      <h2>Sculpture (SoA)</h2>
+        <li>Sculpture, as an art form, allows you to transform various materials into three-dimensional creations. It's a tactile 
+        and expressive hobby that offers endless opportunities for self-expression, exploring different textures, and bringing your artistic visions to life.</li>
+      <h2>Quilting</h2>
+        <li>Quilting involves sewing together layers of fabric to create intricate patterns and designs. It's a relaxing and gratifying 
+        hobby that enables you to produce beautiful and functional pieces, fostering creativity, patience, and attention to detail.</li>
+      <h2>Canoeing</h2>
+        <li>Canoeing combines the joys of being out on the water with physical exercise and exploration of natural landscapes. 
+        It's a peaceful and scenic hobby that promotes relaxation, strengthens muscles, and allows you to connect with nature while enjoying a 
+        rewarding outdoor experience.</li>
+      <h2>Volunteering</h2>
+        <li>Volunteering is a meaningful and selfless hobby that involves dedicating your time and skills to support charitable 
+        causes or help others in need. It not only makes a positive impact on society but also offers personal fulfillment, the opportunity 
+        to learn new things, and the chance to connect with like-minded individuals.</li>
+      <h2>Archery</h2>
+        <li>Archery is a disciplined and focused hobby that requires concentration, precision, and control. It enhances mental focus, 
+        physical coordination, and provides a sense of achievement as you improve your aim and accuracy with each shot.</li>
+      <h2>Reading</h2>
+        <li>Reading is a versatile and enriching hobby that opens up new worlds, stimulates imagination, and enhances knowledge. It 
+        offers an escape from reality, fosters empathy, and provides a valuable source of entertainment, personal growth, and lifelong learning.</li>
+      <h2>Jewelry Making</h2>
+        <li>Jewelry making allows you to design and create unique pieces using various materials such as beads, wire, or precious 
+        metals. It's a hobby that encourages artistic expression, cultivates fine motor skills, and can even evolve into a small business or 
+        personal gift-giving endeavor.</li>
+      
+        </ul>
+      </div>
 
-    // Generate the HTML markup for the list of hobbies
-    let hobbyListMarkup = '';
-    for (let i = 0; i < hobbyArray.length; i++) {
-      let hobby = hobbyArray[i];
-      hobbyListMarkup += '<li>' + hobby.name + '</li>';
-    }
+      <div class="column">
+        <ul id="hobbyList" class="resultsPageBox">
+          <h2>Woodworking</h2>
+          <li>Woodworking is a satisfying and practical hobby that involves crafting items from wood, such as furniture, sculptures, 
+          or decorative pieces. It combines craftsmanship with creativity and provides an opportunity to work with natural materials, develop woodworking 
+          skills, and produce lasting creations.</li>
+          <h2>Gardening</h2>
+        <li>Gardening is a therapeutic and rewarding hobby that lets you connect with nature, nurture plants, and create beautiful 
+        outdoor spaces. It offers relaxation, fresh air, and the joy of watching plants grow, while also providing the satisfaction of 
+        cultivating your own food or flowers.</li>
+      <h2>Video Games</h2>
+        <li>Video games provide a wide range of immersive experiences, from thrilling adventures to strategic challenges and 
+        virtual social interactions. They offer entertainment, storytelling, and opportunities for problem-solving, teamwork, and skill development.</li>
+      <h2>Fishing</h2>
+        <li>Fishing is a peaceful and contemplative hobby that allows you to spend time outdoors, connect with nature, and enjoy the 
+        thrill of the catch. It offers relaxation, patience, and a sense of connection to the natural world while promoting a deeper appreciation 
+        for aquatic ecosystems.</li>
+      <h2>Hiking</h2>
+        <li>Hiking combines exercise with exploration as you traverse trails and immerse yourself in nature's beauty. It provides 
+        physical and mental well-being, an escape from the daily routine, and the opportunity to discover breathtaking landscapes, flora, and fauna.</li>
+      <h2>Yoga</h2>
+        <li>Yoga offers a holistic approach to physical and mental well-being, combining physical postures, breathing exercises, and 
+        meditation. It promotes flexibility, strength, stress relief, and inner balance, making it an excellent hobby for overall health and self-care.</li>
+      <h2>Watching TV</h2>
+        <li>While often seen as a leisure activity, watching TV can be a source of entertainment, relaxation, and inspiration. It allows 
+        you to immerse yourself in compelling stories, learn about different cultures, or indulge in your favorite shows or movies.</li>
+      <h2>Playing Cards</h2>
+        <li>Playing card games, whether it's poker, rummy, or solitaire, provides an opportunity for socializing, strategic thinking, 
+        and friendly competition. It's a versatile hobby that can be enjoyed with friends, family, or as a solo pastime.</li>
+      <h2>Board Games</h2>
+        <li>Board games offer a social and interactive hobby that encourages critical thinking, cooperation, and friendly rivalry. They 
+        provide a wide range of themes, mechanics, and complexities, catering to various interests and age groups.</li>
+      <h2>Writing/Calligraphy</h2>
+        <li>Writing and calligraphy are creative hobbies that allow you to express your thoughts, emotions, and imagination through 
+        the written word. They promote self-reflection, communication skills, and offer a means of personal expression or artistic appreciation.</li>
+      </ul>
+    </div>
 
-    // Set the generated HTML markup as the content of the <ul> element
-    hobbyList.innerHTML = hobbyListMarkup;
-  </script>
+      <div class="column">
+      <ul id="hobbyList" class="resultsPageBox">
+        <h2>Running</h2>
+        <li>Running is a popular hobby that improves cardiovascular fitness, boosts mental well-being, and builds endurance. Whether you prefer 
+        jogging in nature or participating in races, it offers a sense of accomplishment, stress relief, and an opportunity for self-improvement.</li>
+        <h2>Team Sports</h2>
+        <li>Engaging in team sports such as soccer, basketball, or volleyball fosters teamwork, communication, and physical fitness. It 
+        provides social connections, a sense of belonging, and the chance to challenge yourself while enjoying the camaraderie of playing with others.</li>
+      <h2>Dancing</h2>
+        <li>Dancing is a joyful and expressive hobby that combines movement, rhythm, and music. It offers physical fitness, coordination, and a 
+        creative outlet for self-expression, whether you prefer formal dance styles or freestyle improvisation.</li>
+      <h2>Painting</h2>
+        <li>Painting is a versatile and visually stimulating hobby that allows you to explore your creativity, experiment with colors and techniques, 
+        and create unique artwork. It offers relaxation, self-expression, and the opportunity to bring your imagination to life on canvas or other mediums.</li>
+      <h2>Cooking</h2>
+        <li>Cooking is a practical and delicious hobby that allows you to experiment with flavors, learn new recipes, and nurture your culinary skills. 
+        It offers a creative outlet, the satisfaction of creating homemade meals, and the joy of sharing your creations with others.</li>
+      <h2>Bicycling</h2>
+        <li>Bicycling combines exercise, adventure, and eco-friendly transportation. Whether you prefer leisurely rides through scenic routes or 
+        challenging cycling trails, it promotes physical fitness, exploration, and a sense of freedom on two wheels.</li>
+      <h2>Podcasts</h2>
+        <li>Listening to podcasts offers a convenient and informative way to stay entertained, learn new things, and explore various topics of interest. 
+        It provides an opportunity for intellectual engagement, storytelling, and keeping up with the latest trends or news.</li>
+      <h2>Listening to Music</h2>
+        <li>Listening to music is a universal hobby that can uplift your mood, evoke emotions, and serve as a form of self-expression. 
+        It offers relaxation, inspiration, and the chance to explore different genres, artists, and musical cultures.</li>
+      <h2>Playing an Instrument</h2>
+        <li>Playing a musical instrument is a rewarding and expressive hobby that allows you to create beautiful melodies and connect 
+        with music on a deeper level. It improves hand-eye coordination, enhances cognitive skills, and offers personal fulfillment through the joy of 
+        playing and performing.</li>
+      </ul>
+    </div>
+    </sectiion>
+
+
+
     </main>
     <footer>
-      <p>A Secret-Laboratory-Org Website &copy 2023.</p>
+      <image src="img/logo/secretLogo50.png"></image>
+    <p id="footerText">Secret Laboratory Org Website &copy 2023</p>
+    <image src="img/logo/secretLogo50.png"></image>
     </footer>
 </body>
 
