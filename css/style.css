@@ -179,7 +179,7 @@ h2 {
   .logoGen h1 {
     font-size: 2rem;
     font-family: 'chernobyl';
-    background-color: rgb(151, 10, 10);
+    background-color: rgb(190, 59, 59);
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     z-index: 1;
@@ -249,8 +249,8 @@ h2 {
   padding-bottom: 25px;
 }
 .resultsPageBox h2 {
-  color:#202020;
-  text-shadow: 3px 3px #ffffff;
+  color:#e0b807;
+  text-shadow: 3px 3px #0f0f0f;
 }
 /** Div that is on index.html **/
 .main-container {
