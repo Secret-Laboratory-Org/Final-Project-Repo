@@ -1,19 +1,7 @@
-/** The following segment added 24MAY 0300 EST by Jon to style the Nav Bar **/
-
-.back {
-  background-image: url(background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  /* Add other background properties as desired */
-  height: calc(100vh - 80px); /* Subtract the height of the header from the viewport height */
-  position: relative;
-  z-index: -1;
-}
-
+/********************************* HTML Base Elements *********************************/
 header {
   height: 80px; /* Adjust the height of the header */
-  background-color: #741616;
+  background-color: #000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,82 +10,55 @@ header {
 }
 
 main {
-  padding-top: 77px;
-}
-
-#hobbyForm {
-  background-color: rgba(176, 224, 230, 0.7);
-  transition: 350ms;
-  padding: 20px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
-  font-size: 20px;
-  z-index: 1;
-  color: black
-}
-
-
-
-#hobbyForm:hover {
-  transform: scale(1.3);
+  padding-top: 77px;
   
 }
-
 
 body{
-  background-image: url("../background.jpg");
-  color: #741616;
-  
-  
-  
+  background-image: url("/img/background/pexels-pixabay-2150.jpg");
+  color: #ffffff;
 }
 
-
-.container {
-
-  margin-left: auto;
-  margin-right: auto;
-
-
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  position: relative;
+  background-color: #000000;
+  bottom: 0;
+  width: 100%;
+  font-size: xx-large;
 }
 
-
-header {
-  background: #741616;
-}
-
-
-  
-  /* Additional background properties for styling */
-
-
+/********************************* HTML Base Element Modifiers *********************************/
+/* Additional background properties for styling */
 header::after {
   content: '';
   /** This is important to the overhead indicator .hover animation  **/
   display: table;         
   clear: both;
 }
-
+/********** Nav Class **********/
 .navContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
 }
-
+/********** <p> id for "Secret Laboratory **********/
 #brandText {
   display: flex;
   font-family: 'Chernobyl';
-  color: #000000;
+  color: #ffffff;
   font-size: 40px;
 }
-
+/********** <ul> withing <nav> **********/
 nav ul {
   list-style: none;
   
 }
-
+/********** <li> withing <nav> **********/
 nav li {
   display: inline-block;
   margin-left: 70px;
@@ -107,13 +68,16 @@ nav li {
   position: relative;
   font-weight: 500;
 }
-
+/********** <a> withing <nav> **********/
 nav a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 25px;
-
+}
+/********** hovering over <a> withing <nav> **********/
+nav a:hover::before {
+  width: 100%;
 }
 
 /** This means it is in the link BEFORE the text **/
@@ -121,157 +85,59 @@ nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
   /** this position is why we need the nav li position to be relative **/
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 0%;
   /** this is what animates the width of the .hover animation over 250 milli-seconds **/
   transition: all ease-in-out 250ms;
 }
-
-nav a:hover::before {
-  width: 100%;
-}
-
-@font-face {
-font-family: 'CoolFont';
-src: url('path-to-font-file.woff2') format('woff2'),
-     url('path-to-font-file.woff') format('woff');
-
-}
-
-@font-face {
+/********** Footer Text **********/
+#footerText {
   font-family: 'Chernobyl';
-  src: url(/fonts/chernobyl.otf) format("opentype");
+  font-size: 50px;
 }
 
-@font-face {
-  font-family: 'Khokhloma';
-  src: url(/fonts/khokhloma.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'KhokhlomaHollow';
-  src: url(/fonts/khokhlomahollow.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'SovietProgram-Bold';
-  src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'SovietProgram-BoldItalic';
-  src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'SovietProgram-Italic';
-  src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'SovietProgram';
-  src: url(/fonts/sovietprogram.ttf) format("truetype");
-}
-
+/********** Text Section on About page **********/
 .textSection {
-  display: flex;
-  flex-direction: column;
+  padding-top: 15px;
   text-align: center;
   justify-content: center;
 
 }
 
-.resultsBox {
-  background-color: rgba(176, 224, 230, 0.7);
-  padding: 30px;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 1;
-  color: #000000;
-  font-weight: bold;
-  
-
-}
-
-.resultsBox li {
-  padding: 5px;
-
-}
-
-.main-container {
-display: flex;
-justify-content: space-evenly;
-align-items: flex-start;
-
-}
-.logoGen {
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-
-}
-.logoGen h1 {
-  font-size: 2rem;
-
-  background-color: sandybrown;
-  color: #000000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  z-index: 1;
-    padding: 5px;
-    border: 5px groove black;
-
-}
-
-
-.directions {
-  height: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  display: flex;
+#teamBlurb {
+  padding-top: 2em;
+  font-family: 'Work Sans';
+  font-size: 20px;
   justify-content: center;
-  align-items: center;
-  
-  }
+  text-align: center;
+  padding-bottom: 2em;
+}
 
-  .directions p {
-    font-size: 1rem;
-    color: maroon;
-    background-color: #f2f2f2;
-      padding: 5px;
-      z-index: 1;
-     
-  }
-
-
+h2 {
+  font-size: 35px;
+  font-family: 'Chernobyl';
+}
+/********************************* Falling Images CSS *********************************/
 .falling-images-wrapper {
   display: flex;
   gap: 50px;
- flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   width: 50%;
-  max-height: 100vh;
-  
-
+  max-height: 90vh;
 }
 
 .falling-image {
-  
   width: 300px; 
   height: 300px; 
   animation: fall 10s linear infinite;
   object-fit: cover;
   padding-bottom: 10px;
-  
-  
 }
 
 @keyframes fall {
@@ -281,7 +147,387 @@ align-items: center;
  100% {
     transform: translateY(100%);
   }
-
-footer {
-
 }
+/********************************* Hobby Form CSS *********************************/
+#hobbyForm {
+  background-color: rgba(72, 90, 192, 0.781);
+  transition: 350ms;
+  padding: 20px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+  font-size: 20px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #131313;
+}
+
+#hobbyForm:hover {
+  transform: scale(1.185);
+}
+
+.logoGen {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  }
+  /** h1 within that logoGen class **/
+  .logoGen h1 {
+    font-size: 2rem;
+    font-family: 'chernobyl';
+    background-color: rgb(151, 10, 10);
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 5px;
+    border: 5px groove black;
+  }
+  /** Directions box on the entry form **/
+  .directions {
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /** <p> within that class **/
+  .directions p {
+    font-size: 1rem;
+    color: rgb(190, 0, 0);
+    text-shadow: none;
+    background-color: #f2f2f2;
+    padding: 5px;
+    z-index: 1;
+  }
+/********** Results on index.html and results.html **********/
+.libraryLists {
+  display: flex;
+}
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.resultsBox {
+  background-color: rgba(72, 90, 192, 0.781);
+  
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #131313;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+.resultsBox li {
+  padding: 5px;
+}
+.resultsPageBox {
+  background-color: rgba(66, 85, 194, 0.774);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #000000;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.resultsPageBox li {
+  padding: 5px;
+  padding-bottom: 25px;
+}
+.resultsPageBox h2 {
+  color:#202020;
+  text-shadow: 3px 3px #ffffff;
+}
+/** Div that is on index.html **/
+.main-container {
+display: flex;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+
+/***** card divs ******/
+#firstTwo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+#secondTwo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/********** About Page Cards *********/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip0057 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 380px;
+  max-width: 480px;
+  width: 100%;
+  background: #ffffff;
+  color: #000000;
+}
+figure.snip0057 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.snip0057 .image {
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+}
+figure.snip0057 .image img {
+  position: relative;
+  display: block;
+  left: -15%;
+  z-index: 1;
+  -webkit-transform: skew(15deg);
+  transform: skew(15deg);
+}
+figure.snip0057:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transform: skewX(-17deg);
+  transform: skewX(-17deg);
+  -webkit-box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 15px 0px 25px rgba(0, 0, 0, 0.7);
+}
+figure.snip0057 figcaption {
+  padding: 20px 30px 20px 20px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 50%;
+}
+figure.snip0057 figcaption h2,
+figure.snip0057 figcaption p {
+  margin: 0;
+  text-align: right;
+  padding: 10px 0;
+  width: 100%;
+}
+figure.snip0057 figcaption h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+figure.snip0057 figcaption h2 span {
+  font-weight: 800;
+}
+figure.snip0057 figcaption p {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+figure.snip0057 figcaption .icons {
+  width: 100%;
+  text-align: right;
+}
+figure.snip0057 figcaption .icons i {
+  font-size: 26px;
+  padding: 5px;
+  top: 50%;
+  color: #000000;
+  opacity: 0;
+}
+figure.snip0057 figcaption a {
+  opacity: 0.3;
+}
+figure.snip0057 figcaption a:hover {
+  opacity: 0.8;
+}
+figure.snip0057 .position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding: 15px 30px;
+  font-size: 0.9em;
+  opacity: 1;
+  font-style: italic;
+  color: #ffffff;
+  background: #000000;
+}
+figure.snip0057.blue .position {
+  background: #20638f;
+}
+figure.snip0057.red .position {
+  background: #962d22;
+}
+figure.snip0057.yellow .position {
+  background: #bf6516;
+}
+figure.snip0057:hover figcaption,
+figure.snip0057.hover figcaption {
+  bottom: 40px;
+}
+figure.snip0057:hover .icons i,
+figure.snip0057.hover .icons i {
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip0057:hover:before,
+figure.snip0057.hover:before {
+  -webkit-animation: shadow 0.6s ease-in-out;
+  animation: shadow 0.6s ease-in-out;
+}
+@-webkit-keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes shadow {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: -5px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+
+/* Demo purposes only 
+html {
+  height: 100%;
+}
+body {
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  height: 100%;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************* Fonts *********************************/
+
+@font-face {
+  font-family: 'CoolFont';
+  src: url('path-to-font-file.woff2') format('woff2'),
+       url('path-to-font-file.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Chernobyl';
+    src: url(/fonts/chernobyl.otf) format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Khokhloma';
+    src: url(/fonts/khokhloma.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'KhokhlomaHollow';
+    src: url(/fonts/khokhlomahollow.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'SovietProgram-Bold';
+    src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'SovietProgram-BoldItalic';
+    src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'SovietProgram-Italic';
+    src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'SovietProgram';
+    src: url(/fonts/sovietprogram.ttf) format("truetype");
+  }

@@ -2,8 +2,6 @@
 
 let resultArea = document.getElementById('results');
 
-
-
 function AppState() {
   this.allHobbies = [];
 }

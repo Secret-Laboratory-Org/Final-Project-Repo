@@ -1,0 +1,39 @@
+Tufting, indoor, required, active, creative, high-expense, alone, low-usage, planned, long-term
+Beatboxing, indoor, not-required, active, creative, low-expense, alone, low-usage, spontaneous, short-term
+Tai Chi, outdoor, not-required, active, structured, low-expense, alone, low-usage, spontaneous, short-term
+Sandbox Art, indoor, required, non-active, creative, high-expense, alone, low-usage, planned, long-term
+Metal Detecting, outdoor, required, active, structured, high-expense, alone, high-usage, spontaneous, long-ter
+Muay Thai, indoor, not-required, active, structured, low-expense, group, low-usage, planned, long-term
+Flying Drones, outdoor, required, non-active, structured, high-expense, alone, high-usage, planned, shor-term
+Spoken Poetry, indoor, not-required, non-active, creative, low-expense, alone, low-usage, spontaneous, short-ter
+Lego Building, indoor, required, non-active, creative, high-expense, alone, low-usage, spontaneous, long-term
+Leaf Pressing, outdoor, required, non-active, creative, low-expense, alone, low-usage, spontaneous, short-term
+Pickling, indoor, required, non-active, structured, low-expense, alone, low-usage, planned, short-term
+Juggling, outdoors, required, active, structured, low-expense, alone, low-usage, spontaneous, short-term
+D&D, indoors, required, non-active, creative, low-expense, group, low-usage, planned, long-term
+Sculpture (soa), indoor, required, non-active, creative, high-expense, alone, low-usage, planned, long-ter
+Quilting, indoor, required, non-active, creative, high-expense, alone, low-usage, planned, long-term
+Canoeing, outdoor, required, active, structured, high-expense, alone, low-usage, planned, long-term
+Volunteering, indoor, not-required, non-active, structured, low-expense, alone, low-usage, planned, lon-term
+Archery, outdoor, required, active, structured, high-expense, alone, low-usage, planned, short-term
+Reading, indoor, not-required, non-active, structured, low-expense, alone, low-usage, spontaneous, long-term
+Jewelry Making, indoor, required, non-active, creative, high-expense, alone, low-usage, planned, long-term
+Woodworking, indoor, required, active, creative, high-expense, alone, low-usage, planned, long-term
+Gardening, outdoor, required, active, structured, high-expense, alone, low-usage, planned, long-term
+Video Games, indoor, required, non-active, structured, high-expense, alone, high-usage, spontaneous, short-term
+Fishing, outdoor, required, active, structured, high-expense, alone, low-usage, planned, long-term
+Hiking, outdoor, not-required, active, structured, low-expense, alone, low-usage, spontaneous, long-term
+Yoga - Stretching, indoor, not-required, active, structured, low-expense, alone, low-usage, spontaneous, lon-term
+Watching TV, indoor, required, non-active, structured, high-expense, alone, high-usage, spontaneous, short-term
+Playing Cards, indoor, required, non-active, structured, low-expense, group, low-usage, spontaneous, short-term
+Board Games, indoor, required, non-active, structured, low-expense, group, low-usage, spontaneous, short-term
+Writing/Calligraphy, indoor, required, non-active, creative, low-expense, alone, low-usage, spontaneous, shor-term
+Running, outdoor, not-required, active, structured, low-expense, alone, low-usage, planned, short-term
+Team Sports, outdoor, required, active, structured, low-expense, group, low-usage, planned, long-term
+Dancing, indoor, not-required, active, creative, low-expense, alone, low-usage, spontaneous, short-term
+Painting, indoor, required, non-active, creative, high-expense, alone, low-usage, planned, long-term
+Cooking, indoor, required, non-active, creative, low-expense, alone, low-usage, planned, short-term
+Bicycling, outdoor, required, active, structured, high-expense, alone, low-usage, planned, long-term
+Podcasts, indoor, required, non-active, structured, low-expense, alone, high-usage, spontaneous, short-term
+Listening to Music, indoor, required, non-active, structured, low-expense, alone, high-usage, spontaneous, shor-term
+Playing an instrument, indoor, required, active, creative, high-expense, alone, low-usage, spontaneous, lon-term
