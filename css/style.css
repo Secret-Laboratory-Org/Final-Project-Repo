@@ -16,7 +16,7 @@ main {
 }
 
 body{
-  background-image: url("/img/background/pexels-pixabay-2150.jpg");
+  background-image: url("../img/background/pexels-pixabay-2150.jpg");
   color: #ffffff;
 }
 
@@ -442,92 +442,13 @@ body {
 }
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /********************************* Fonts *********************************/
-
 @font-face {
   font-family: 'CoolFont';
   src: url('path-to-font-file.woff2') format('woff2'),
        url('path-to-font-file.woff') format('woff');
   }
-  
-  @font-face {
-    font-family: 'Chernobyl';
-    src: url(/fonts/chernobyl.otf) format("opentype");
-  }
-  
-  @font-face {
-    font-family: 'Khokhloma';
-    src: url(/fonts/khokhloma.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'KhokhlomaHollow';
-    src: url(/fonts/khokhlomahollow.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'SovietProgram-Bold';
-    src: url(/fonts/sovietprogram-bold.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'SovietProgram-BoldItalic';
-    src: url(/fonts/sovietprogram-bolditalic.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'SovietProgram-Italic';
-    src: url(/fonts/sovietprogram-italic.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: 'SovietProgram';
-    src: url(/fonts/sovietprogram.ttf) format("truetype");
-  }
+@font-face {
+  font-family: 'Chernobyl';
+  src: url(../fonts/chernobyl.otf) format("opentype");
+}
