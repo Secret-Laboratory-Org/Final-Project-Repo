@@ -241,7 +241,7 @@ align-items: center;
 
 .directions {
   height: 40px;
-  border: solid 2px palegreen;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,19 +259,14 @@ align-items: center;
 
 
 .falling-images-wrapper {
-  /* transform: translateY(-50%); */
   display: flex;
-  /* flex-wrap: wrap; */
   gap: 50px;
-  flex-direction: column;
+ flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* animation: flowImages 20s linear infinite; */
   overflow: hidden;
-  border: solid 2px pink;
   width: 50%;
   max-height: 100vh;
-  /* margin-top: 200px; */
   
 
 }
@@ -280,9 +275,9 @@ align-items: center;
   
   width: 300px; 
   height: 300px; 
-  animation: fall 15s linear infinite;
-  /* margin-bottom: 50px; */
+  animation: fall 10s linear infinite;
   object-fit: cover;
+  padding-bottom: 10px;
   
   
 }
